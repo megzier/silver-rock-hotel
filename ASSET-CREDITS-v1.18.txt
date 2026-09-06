@@ -1,0 +1,14 @@
+Silver Rock Website V1.18 Asset Credits
+
+Authentic property backgrounds:
+- Silver_Rock-13-new.jpg (pool), Silver_Rock-98__1_.jpg (ocean pavilion), and Silver_Rock-2__2_.jpg (beachfront) are Silver Rock property photographs used by the official MOKAWA Group website.
+
+MOKAWA Group logo:
+- images/logo_footer.svg, official MOKAWA Group identity used on mokawagroup.com.
+
+Icons:
+- Font Awesome Free SVG icons, locally bundled. Source: https://github.com/FortAwesome/Font-Awesome
+- License included as FONT-AWESOME-FREE-LICENSE.txt.
+
+Map and directions:
+- Google Maps embed and directions link for Silver Rock Boutique Resort by MOKAWA, Silversand Road, Malindi, Kenya.

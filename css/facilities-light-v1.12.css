@@ -1,0 +1,197 @@
+/* Silver Rock Boutique Resort by MOKAWA — light Facilities presentation V1.12
+   This file changes only the Facilities palette. The Boutique Spa section is untouched. */
+
+.lux-facilities-section {
+    background:
+        radial-gradient(circle at 9% 8%, rgba(169, 130, 72, .12), transparent 27rem),
+        linear-gradient(180deg, #fbf9f5 0%, #f4efe7 100%);
+    color: #241f1a;
+}
+
+.lux-eyebrow--light,
+.lux-facility-kicker {
+    color: #9a713b;
+}
+
+.lux-facilities-header h2 {
+    color: #201b17;
+}
+
+.lux-facilities-header > p:last-child {
+    color: #655d55;
+}
+
+.lux-facility-stage {
+    border-color: rgba(99, 76, 47, .18);
+    background: #eee7dd;
+    box-shadow: 0 30px 80px rgba(58, 43, 27, .16);
+}
+
+.lux-facility-media img {
+    filter: saturate(.98) contrast(1.01) brightness(1.04);
+}
+
+.lux-facility-overlay {
+    background:
+        linear-gradient(90deg, rgba(250, 247, 241, .97) 0%, rgba(250, 247, 241, .88) 24%, rgba(250, 247, 241, .18) 47%, rgba(250, 247, 241, 0) 70%),
+        linear-gradient(0deg, rgba(250, 247, 241, .46) 0%, rgba(250, 247, 241, 0) 43%);
+}
+
+.lux-facility-index {
+    border-right-color: rgba(99, 76, 47, .16);
+    background: rgba(250, 247, 241, .78);
+    box-shadow: 18px 0 45px rgba(56, 42, 27, .08);
+    backdrop-filter: blur(12px);
+}
+
+.lux-facility-index-label {
+    color: #9a713b;
+}
+
+.lux-facility-index button {
+    border-bottom-color: rgba(99, 76, 47, .12);
+    color: #6b6259;
+}
+
+.lux-facility-index button b {
+    color: rgba(154, 113, 59, .72);
+}
+
+.lux-facility-index button:hover,
+.lux-facility-index button.is-active {
+    color: #1f1a16;
+}
+
+.lux-facility-index button.is-active {
+    background: rgba(255, 255, 255, .68);
+    box-shadow: inset 3px 0 0 #a98248;
+}
+
+.lux-facility-index button.is-active b {
+    color: #8f6532;
+}
+
+.lux-facility-counter {
+    color: #3d352e;
+    text-shadow: 0 1px 8px rgba(255,255,255,.7);
+}
+
+.lux-facility-counter i {
+    background: rgba(61, 53, 46, .45);
+}
+
+.lux-facility-copy {
+    padding: clamp(1.6rem, 3vw, 2.6rem);
+    border: 1px solid rgba(99, 76, 47, .16);
+    border-left: 4px solid #a98248;
+    background: rgba(255, 253, 249, .93);
+    box-shadow: 0 24px 65px rgba(45, 34, 22, .18);
+    backdrop-filter: blur(12px);
+}
+
+.lux-facility-copy h3 {
+    color: #211b17;
+    text-shadow: none;
+}
+
+.lux-facility-copy > p:not(.lux-facility-kicker) {
+    color: #5d554d;
+}
+
+.lux-facility-meta span {
+    color: #625950;
+}
+
+.lux-facility-meta i {
+    color: #9a713b;
+}
+
+.lux-facility-link {
+    color: #745126;
+}
+
+.lux-facility-link:hover {
+    color: #9a713b;
+}
+
+.lux-facility-arrows button {
+    border-color: rgba(74, 58, 40, .28);
+    background: rgba(255, 253, 249, .92);
+    color: #2d2721;
+    box-shadow: 0 8px 24px rgba(45, 34, 22, .14);
+}
+
+.lux-facility-arrows button:hover {
+    border-color: #a98248;
+    background: #a98248;
+    color: #fff;
+}
+
+.lux-facility-progress {
+    background: rgba(85, 67, 46, .16);
+}
+
+.lux-facility-progress span {
+    background: #a98248;
+}
+
+.lux-facility-footnote {
+    border-color: rgba(99, 76, 47, .16);
+    background: rgba(255, 253, 249, .74);
+}
+
+.lux-facility-footnote span {
+    border-right-color: rgba(99, 76, 47, .14);
+    color: #6a6057;
+}
+
+@media (max-width: 900px) {
+    .lux-facility-index {
+        border-bottom-color: rgba(99, 76, 47, .18);
+        background: rgba(250, 247, 241, .94);
+        box-shadow: 0 10px 32px rgba(56, 42, 27, .10);
+    }
+
+    .lux-facility-index button {
+        border-color: rgba(99, 76, 47, .16);
+        background: rgba(255,255,255,.56);
+    }
+
+    .lux-facility-index button:hover,
+    .lux-facility-index button.is-active {
+        border-color: rgba(154, 113, 59, .62);
+        background: #fff;
+    }
+
+    .lux-facility-overlay {
+        background:
+            linear-gradient(0deg, rgba(250, 247, 241, .40) 0%, rgba(250, 247, 241, .08) 48%, rgba(250, 247, 241, .16) 100%);
+    }
+
+    .lux-facility-copy {
+        width: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .lux-facility-copy {
+        padding: 1.45rem;
+        border-left-width: 3px;
+    }
+
+    .lux-facility-copy h3 {
+        font-size: clamp(2.75rem, 12vw, 4.5rem);
+    }
+
+    .lux-facility-footnote span:nth-child(-n+2) {
+        border-bottom-color: rgba(99, 76, 47, .14);
+    }
+}
+
+@media (max-width: 460px) {
+    .lux-facility-copy {
+        right: .9rem;
+        left: .9rem;
+        padding: 1.2rem;
+    }
+}

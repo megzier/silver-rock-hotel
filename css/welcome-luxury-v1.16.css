@@ -1,0 +1,275 @@
+/* Silver Rock Boutique Resort by MOKAWA — Welcome editorial redesign V1.16
+   Uses only authentic Silver Rock property photography. */
+
+.welcome-section {
+    position: relative;
+    min-height: 790px;
+    padding: 0;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg,
+            rgba(255,252,246,.99) 0%,
+            rgba(255,252,246,.985) 38%,
+            rgba(255,252,246,.92) 49%,
+            rgba(255,252,246,.48) 64%,
+            rgba(255,252,246,.10) 82%,
+            rgba(255,252,246,.04) 100%),
+        url('../images/Silver_Rock-2__2_.jpg') center 46% / cover no-repeat;
+    color: #271a14;
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    right: auto;
+    bottom: auto;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,.18), transparent 24%, transparent 75%, rgba(27,19,14,.08)),
+        linear-gradient(90deg, rgba(164,124,70,.045) 1px, transparent 1px);
+    background-size: auto, 180px 100%;
+    pointer-events: none;
+}
+
+.welcome-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: min(54vw, 860px);
+    background: linear-gradient(90deg, rgba(255,252,246,.38), rgba(255,252,246,0));
+    pointer-events: none;
+}
+
+.welcome-shell {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: none;
+    min-height: 790px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(520px, 47%) minmax(0, 53%);
+    gap: 0;
+    align-items: stretch;
+}
+
+.welcome-copy {
+    max-width: none;
+    align-self: center;
+    padding: clamp(4.7rem, 7vw, 7.2rem) clamp(2.2rem, 5vw, 5.8rem) clamp(4.7rem, 7vw, 7.2rem) clamp(2rem, 4vw, 4.25rem);
+}
+
+.welcome-eyebrow {
+    margin-bottom: 1.2rem;
+    color: #8c642f;
+    letter-spacing: .24em;
+}
+
+.welcome-title {
+    max-width: 720px;
+    font-size: clamp(3.4rem, 5.15vw, 5.9rem);
+    line-height: .91;
+}
+
+.welcome-title span {
+    margin-top: .38rem;
+    font-size: .5em;
+}
+
+.welcome-rule {
+    width: 8.5rem;
+    margin: 1.8rem 0 1.9rem;
+}
+
+.welcome-lead {
+    max-width: 670px;
+    font-size: clamp(1.42rem, 1.75vw, 1.82rem);
+    line-height: 1.45;
+}
+
+.welcome-text {
+    max-width: 650px;
+    font-size: .95rem;
+    line-height: 1.82;
+}
+
+.welcome-actions {
+    margin-top: 1.7rem;
+}
+
+.welcome-managed {
+    max-width: 650px;
+    margin-top: 1.9rem;
+    padding-top: 1.35rem;
+}
+
+.welcome-visual {
+    position: relative;
+    min-height: 790px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.welcome-image-frame {
+    position: relative;
+    inset: auto;
+    width: min(88%, 760px);
+    height: min(72vh, 650px);
+    min-height: 570px;
+    margin: 0 clamp(2rem, 4vw, 4.5rem) 0 0;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.62);
+    border-radius: 1.25rem;
+    background: #d9d2c8;
+    box-shadow:
+        0 34px 80px rgba(41,29,19,.24),
+        0 0 0 10px rgba(255,255,255,.14);
+}
+
+.welcome-image-frame::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    border: 1px solid rgba(255,255,255,.42);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.welcome-image-frame::after {
+    z-index: 1;
+    background:
+        linear-gradient(180deg, rgba(25,17,12,.02) 48%, rgba(25,17,12,.34) 100%),
+        linear-gradient(90deg, rgba(25,17,12,.06), transparent 42%);
+}
+
+.welcome-image-frame img {
+    object-position: 51% 48%;
+    transform: scale(1.02);
+}
+
+.welcome-visual:hover .welcome-image-frame img {
+    transform: scale(1.045);
+}
+
+/* Replace floating generic cards with a restrained photographic caption. */
+.welcome-location-card {
+    top: auto;
+    left: auto;
+    right: clamp(2rem, 4vw, 4.5rem);
+    bottom: 5.25rem;
+    min-width: 0;
+    max-width: 19rem;
+    padding: .9rem 1.05rem;
+    border: 0;
+    border-left: 3px solid #c49a55;
+    border-radius: 0;
+    background: rgba(29,21,16,.82);
+    box-shadow: 0 14px 34px rgba(25,18,13,.25);
+    backdrop-filter: blur(8px);
+}
+
+.welcome-location-card i {
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    color: #e2bd7a;
+}
+
+.welcome-location-card small {
+    color: rgba(255,255,255,.68);
+}
+
+.welcome-location-card strong {
+    color: #fff;
+}
+
+.welcome-quote-card {
+    display: none;
+}
+
+@media (max-width: 1180px) {
+    .welcome-shell {
+        grid-template-columns: minmax(470px, 49%) minmax(0, 51%);
+    }
+    .welcome-copy {
+        padding-right: 2.5rem;
+    }
+    .welcome-image-frame {
+        width: 91%;
+        margin-right: 2.5rem;
+    }
+    .welcome-location-card {
+        right: 2.5rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .welcome-section {
+        min-height: 0;
+        background:
+            linear-gradient(180deg, rgba(255,252,246,.99) 0%, rgba(255,252,246,.98) 52%, rgba(255,252,246,.50) 72%, rgba(255,252,246,.10) 100%),
+            url('../images/Silver_Rock-2__2_.jpg') center bottom / cover no-repeat;
+    }
+    .welcome-section::after { display: none; }
+    .welcome-shell {
+        min-height: 0;
+        grid-template-columns: 1fr;
+    }
+    .welcome-copy {
+        padding: 5rem 5% 3.5rem;
+    }
+    .welcome-visual {
+        min-height: 580px;
+        padding: 0 5% 4rem;
+        justify-content: center;
+    }
+    .welcome-image-frame {
+        width: 100%;
+        height: 560px;
+        min-height: 0;
+        margin: 0;
+    }
+    .welcome-location-card {
+        right: 7%;
+        bottom: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome-copy {
+        padding: 4.2rem 1.35rem 3rem;
+    }
+    .welcome-title {
+        font-size: clamp(3rem, 14vw, 4.6rem);
+    }
+    .welcome-actions {
+        display: grid;
+    }
+    .welcome-actions a {
+        width: 100%;
+    }
+    .welcome-visual {
+        min-height: 430px;
+        padding: 0 1.1rem 2.8rem;
+    }
+    .welcome-image-frame {
+        height: 420px;
+        border-radius: .7rem;
+    }
+    .welcome-location-card {
+        left: 2rem;
+        right: 2rem;
+        bottom: 4.3rem;
+        max-width: none;
+    }
+}

@@ -1,0 +1,6 @@
+Silver Rock Website V1.18
+- Added authentic Silver Rock property-photo backgrounds to Resort Summary, Dining, and Rates & Directions.
+- Added Google Maps directions/location panel to Rates & Packages.
+- Added the official MOKAWA Group logo to the footer.
+- Replaced Bootstrap icon-font rendering with locally bundled Font Awesome Free SVG masks.
+- Recoloured icons to charcoal, deep coastal green, and white; gold icon treatment removed.

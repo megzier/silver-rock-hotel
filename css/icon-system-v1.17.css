@@ -1,0 +1,153 @@
+/* Silver Rock Boutique Resort by MOKAWA — Professional Icon System V1.17
+   Uses locally bundled Bootstrap Icons 1.13.1. */
+
+/* Base icon treatment: consistent size, alignment and restraint */
+.bi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: -0.12em;
+    text-rendering: geometricPrecision;
+}
+
+/* Intro metadata and location card */
+.silver-meta-item .bi,
+.welcome-location-card .bi {
+    color: #9a713b;
+    font-size: 1.05rem;
+}
+
+.welcome-location-card .bi {
+    width: 2.35rem;
+    height: 2.35rem;
+    margin-right: .65rem;
+    border: 1px solid rgba(154,113,59,.28);
+    border-radius: 50%;
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 8px 20px rgba(62,44,28,.09);
+}
+
+.welcome-managed-mark {
+    border: 1px solid rgba(154,113,59,.22) !important;
+    background: rgba(255,255,255,.72) !important;
+    box-shadow: none !important;
+}
+.welcome-managed-mark .bi {
+    color: #9a713b;
+    font-size: 1rem;
+}
+
+/* Resort summary: remove the heavy, generic badge effect */
+.stat-icon.summary-icon {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 1px solid rgba(122,88,49,.20);
+    background: rgba(255,255,255,.60);
+    box-shadow: 0 10px 26px rgba(63,44,27,.06);
+}
+.stat-icon.summary-icon .bi {
+    color: #8f6532;
+    font-size: 1.28rem;
+}
+.summary-award-icon {
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(255,255,255,.10);
+}
+.summary-award-icon .bi {
+    font-size: 1.25rem;
+}
+
+/* Room and suite feature icons */
+.lux-room-feature-list .bi,
+.lux-stay-inclusions .bi,
+.lux-rooms-note .bi {
+    color: #9a713b;
+    font-size: 1rem;
+}
+.lux-room-feature-list li {
+    gap: .62rem;
+}
+.lux-room-feature-list .bi {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+.lux-stay-inclusions span {
+    gap: .62rem;
+}
+.lux-stay-inclusions .bi {
+    width: 1.55rem;
+    height: 1.55rem;
+    border: 1px solid rgba(154,113,59,.18);
+    border-radius: 50%;
+    background: rgba(255,255,255,.7);
+}
+
+/* Slider and arrow controls */
+.room-slider-nav .bi,
+.lux-circle-link .bi,
+.lux-facility-arrows .bi,
+.lux-text-link .bi,
+.welcome-primary .bi,
+.summary-card > a .bi,
+.spa-link .bi,
+.lux-facility-link .bi {
+    font-size: .95rem;
+}
+.room-slider-nav .bi {
+    color: currentColor;
+}
+
+/* Dining, booking and contact actions */
+.btn-book .bi,
+.hero-btn .bi,
+.rates-whatsapp-link .bi,
+.rates-download-btn .bi {
+    margin-right: .48rem;
+    font-size: 1rem;
+}
+.dining-icon-btn .bi {
+    font-size: 1.05rem;
+}
+
+/* Facility metadata */
+.lux-facility-meta .bi {
+    width: 1.2rem;
+    color: #9a713b;
+    font-size: .94rem;
+}
+
+/* Rate card */
+.rates-download-icon {
+    border: 1px solid rgba(154,113,59,.25);
+    background: rgba(255,255,255,.72);
+    box-shadow: 0 14px 34px rgba(54,37,23,.08);
+}
+.rates-download-icon .bi {
+    color: #8f6532;
+    font-size: 1.65rem;
+}
+
+/* Footer and contact icons */
+.footer-contact .bi,
+.contact-section .bi {
+    color: #c6a060;
+    width: 1.25rem;
+    margin-right: .4rem;
+}
+.social-icons a .bi {
+    font-size: 1rem;
+}
+
+/* Avoid visual bulk on small screens */
+@media (max-width: 720px) {
+    .stat-icon.summary-icon {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+    .stat-icon.summary-icon .bi {
+        font-size: 1.12rem;
+    }
+}

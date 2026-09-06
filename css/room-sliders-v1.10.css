@@ -1,0 +1,148 @@
+/* Silver Rock Boutique Resort by MOKAWA — room image sliders V1.10
+   Additive styling only. The V1.8 Rooms & Suites layout and Facilities design remain intact. */
+
+.silver-hero-managed {
+    margin: 0 0 .9rem;
+    color: rgba(255,255,255,.92);
+    font-size: clamp(.66rem, .85vw, .82rem);
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 16px rgba(0,0,0,.35);
+}
+.silver-hero-managed strong { color: #e5c17d; font-weight: 700; }
+
+.room-image-slider {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #d8cfc3;
+}
+.room-image-slider--feature { position: absolute; inset: 0; }
+.room-image-slider--standard { min-height: 100%; }
+.room-slider-track { position: absolute; inset: 0; }
+.room-slide {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateX(4%);
+    pointer-events: none;
+    transition: opacity .7s ease, transform .9s cubic-bezier(.2,.72,.25,1);
+}
+.room-slide.is-active {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.room-slide.is-leaving { transform: translateX(-3%); }
+.room-slide img,
+.lux-room-card-image .room-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.05s cubic-bezier(.2,.72,.25,1);
+}
+.lux-room-card:hover .room-slide.is-active img { transform: scale(1.035); }
+
+.room-slider-nav {
+    appearance: none;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.58);
+    border-radius: 50%;
+    background: rgba(25,20,16,.44);
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-50%);
+    backdrop-filter: blur(8px);
+    transition: opacity .25s ease, background .25s ease, transform .25s ease;
+}
+.room-slider-prev { left: 1rem; }
+.room-slider-next { right: 1rem; }
+.room-image-slider:hover .room-slider-nav,
+.room-image-slider:focus-within .room-slider-nav { opacity: 1; }
+.room-slider-nav:hover { background: rgba(33,26,22,.86); transform: translateY(-50%) scale(1.04); }
+.room-slider-nav:focus-visible,
+.room-slider-dot:focus-visible { outline: 2px solid #f0cf8a; outline-offset: 3px; }
+
+.room-slider-dots {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.15rem;
+    z-index: 6;
+    display: flex;
+    gap: .42rem;
+    align-items: center;
+    max-width: calc(100% - 7.2rem);
+    padding: .42rem .55rem;
+    border-radius: 999px;
+    background: rgba(24,19,15,.34);
+    backdrop-filter: blur(7px);
+}
+.room-slider-dot {
+    appearance: none;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255,255,255,.62);
+    cursor: pointer;
+    transition: width .25s ease, background .25s ease;
+}
+.room-slider-dot.is-active { width: 24px; background: #fff; }
+.room-slider-count {
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.12rem;
+    z-index: 6;
+    min-width: 54px;
+    padding: .44rem .6rem;
+    border: 1px solid rgba(255,255,255,.38);
+    background: rgba(24,19,15,.38);
+    color: rgba(255,255,255,.78);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .57rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-align: center;
+    backdrop-filter: blur(7px);
+}
+.room-slider-count b { color: #fff; font-weight: 700; }
+
+/* Keep original V1.8 badge/number/inset hierarchy above the added moving images. */
+.lux-room-gallery > .lux-room-badge,
+.lux-room-gallery > .lux-room-number,
+.lux-room-gallery > .lux-room-inset-image,
+.lux-room-card-image > .lux-room-badge,
+.lux-room-card-image > .lux-room-number { z-index: 8; }
+
+@media (hover: none) {
+    .room-slider-nav { opacity: .82; width: 40px; height: 40px; }
+}
+@media (max-width: 720px) {
+    .room-slider-nav { width: 38px; height: 38px; }
+    .room-slider-prev { left: .65rem; }
+    .room-slider-next { right: .65rem; }
+    .room-slider-dots { left: .75rem; bottom: .75rem; max-width: calc(100% - 6.2rem); }
+    .room-slider-count { right: .75rem; bottom: .72rem; }
+    .silver-hero-managed { letter-spacing: .12em; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .room-slide,
+    .room-slide img,
+    .room-slider-nav,
+    .room-slider-dot { transition: none !important; }
+}

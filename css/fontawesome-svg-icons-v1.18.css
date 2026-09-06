@@ -1,0 +1,162 @@
+/* Silver Rock V1.18 — locally bundled Font Awesome Free SVG icon system.
+   SVG masks are sourced from Font Awesome Free and included in /icons/fontawesome. */
+
+.bi {
+    --icon-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    flex: 0 0 var(--icon-size);
+    color: currentColor;
+    font-family: inherit !important;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: -0.12em;
+}
+.bi::before {
+    content: "" !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.bi-arrow-left::before { -webkit-mask-image: url("../icons/fontawesome/arrow-left.svg"); mask-image: url("../icons/fontawesome/arrow-left.svg"); }
+.bi-arrow-right::before { -webkit-mask-image: url("../icons/fontawesome/arrow-right.svg"); mask-image: url("../icons/fontawesome/arrow-right.svg"); }
+.bi-award::before { -webkit-mask-image: url("../icons/fontawesome/award.svg"); mask-image: url("../icons/fontawesome/award.svg"); }
+.bi-bell::before { -webkit-mask-image: url("../icons/fontawesome/bell-concierge.svg"); mask-image: url("../icons/fontawesome/bell-concierge.svg"); }
+.bi-briefcase::before { -webkit-mask-image: url("../icons/fontawesome/briefcase.svg"); mask-image: url("../icons/fontawesome/briefcase.svg"); }
+.bi-brush::before { -webkit-mask-image: url("../icons/fontawesome/broom.svg"); mask-image: url("../icons/fontawesome/broom.svg"); }
+.bi-calendar-check::before { -webkit-mask-image: url("../icons/fontawesome/calendar-check.svg"); mask-image: url("../icons/fontawesome/calendar-check.svg"); }
+.bi-camera::before { -webkit-mask-image: url("../icons/fontawesome/camera.svg"); mask-image: url("../icons/fontawesome/camera.svg"); }
+.bi-chevron-left::before { -webkit-mask-image: url("../icons/fontawesome/chevron-left.svg"); mask-image: url("../icons/fontawesome/chevron-left.svg"); }
+.bi-chevron-right::before { -webkit-mask-image: url("../icons/fontawesome/chevron-right.svg"); mask-image: url("../icons/fontawesome/chevron-right.svg"); }
+.bi-clock::before { -webkit-mask-image: url("../icons/fontawesome/clock.svg"); mask-image: url("../icons/fontawesome/clock.svg"); }
+.bi-compass::before { -webkit-mask-image: url("../icons/fontawesome/compass.svg"); mask-image: url("../icons/fontawesome/compass.svg"); }
+.bi-cup::before { -webkit-mask-image: url("../icons/fontawesome/mug-hot.svg"); mask-image: url("../icons/fontawesome/mug-hot.svg"); }
+.bi-cup-straw::before { -webkit-mask-image: url("../icons/fontawesome/martini-glass-citrus.svg"); mask-image: url("../icons/fontawesome/martini-glass-citrus.svg"); }
+.bi-door-open::before { -webkit-mask-image: url("../icons/fontawesome/door-open.svg"); mask-image: url("../icons/fontawesome/door-open.svg"); }
+.bi-download::before { -webkit-mask-image: url("../icons/fontawesome/download.svg"); mask-image: url("../icons/fontawesome/download.svg"); }
+.bi-envelope::before { -webkit-mask-image: url("../icons/fontawesome/envelope.svg"); mask-image: url("../icons/fontawesome/envelope.svg"); }
+.bi-facebook::before { -webkit-mask-image: url("../icons/fontawesome/facebook.svg"); mask-image: url("../icons/fontawesome/facebook.svg"); }
+.bi-file-earmark-pdf::before { -webkit-mask-image: url("../icons/fontawesome/file-pdf.svg"); mask-image: url("../icons/fontawesome/file-pdf.svg"); }
+.bi-flower1::before { -webkit-mask-image: url("../icons/fontawesome/spa.svg"); mask-image: url("../icons/fontawesome/spa.svg"); }
+.bi-flower3::before { -webkit-mask-image: url("../icons/fontawesome/seedling.svg"); mask-image: url("../icons/fontawesome/seedling.svg"); }
+.bi-gem::before { -webkit-mask-image: url("../icons/fontawesome/gem.svg"); mask-image: url("../icons/fontawesome/gem.svg"); }
+.bi-geo-alt::before { -webkit-mask-image: url("../icons/fontawesome/location-dot.svg"); mask-image: url("../icons/fontawesome/location-dot.svg"); }
+.bi-grid::before { -webkit-mask-image: url("../icons/fontawesome/table-cells.svg"); mask-image: url("../icons/fontawesome/table-cells.svg"); }
+.bi-headset::before { -webkit-mask-image: url("../icons/fontawesome/headset.svg"); mask-image: url("../icons/fontawesome/headset.svg"); }
+.bi-house-door::before { -webkit-mask-image: url("../icons/fontawesome/bed.svg"); mask-image: url("../icons/fontawesome/bed.svg"); }
+.bi-instagram::before { -webkit-mask-image: url("../icons/fontawesome/instagram.svg"); mask-image: url("../icons/fontawesome/instagram.svg"); }
+.bi-lamp::before { -webkit-mask-image: url("../icons/fontawesome/couch.svg"); mask-image: url("../icons/fontawesome/couch.svg"); }
+.bi-leaf::before { -webkit-mask-image: url("../icons/fontawesome/leaf.svg"); mask-image: url("../icons/fontawesome/leaf.svg"); }
+.bi-shield-check::before { -webkit-mask-image: url("../icons/fontawesome/shield.svg"); mask-image: url("../icons/fontawesome/shield.svg"); }
+.bi-snow::before { -webkit-mask-image: url("../icons/fontawesome/snowflake.svg"); mask-image: url("../icons/fontawesome/snowflake.svg"); }
+.bi-telephone::before { -webkit-mask-image: url("../icons/fontawesome/phone.svg"); mask-image: url("../icons/fontawesome/phone.svg"); }
+.bi-umbrella::before { -webkit-mask-image: url("../icons/fontawesome/umbrella-beach.svg"); mask-image: url("../icons/fontawesome/umbrella-beach.svg"); }
+.bi-water::before { -webkit-mask-image: url("../icons/fontawesome/water.svg"); mask-image: url("../icons/fontawesome/water.svg"); }
+.bi-water-ladder::before { -webkit-mask-image: url("../icons/fontawesome/person-swimming.svg"); mask-image: url("../icons/fontawesome/person-swimming.svg"); }
+.bi-whatsapp::before { -webkit-mask-image: url("../icons/fontawesome/whatsapp.svg"); mask-image: url("../icons/fontawesome/whatsapp.svg"); }
+.bi-wifi::before { -webkit-mask-image: url("../icons/fontawesome/wifi.svg"); mask-image: url("../icons/fontawesome/wifi.svg"); }
+.bi-wind::before { -webkit-mask-image: url("../icons/fontawesome/wind.svg"); mask-image: url("../icons/fontawesome/wind.svg"); }
+.bi-map-location::before { -webkit-mask-image: url("../icons/fontawesome/map-location-dot.svg"); mask-image: url("../icons/fontawesome/map-location-dot.svg"); }
+.bi-route::before { -webkit-mask-image: url("../icons/fontawesome/route.svg"); mask-image: url("../icons/fontawesome/route.svg"); }
+.bi-car-front::before { -webkit-mask-image: url("../icons/fontawesome/car.svg"); mask-image: url("../icons/fontawesome/car.svg"); }
+.bi-plane-arrival::before { -webkit-mask-image: url("../icons/fontawesome/plane-arrival.svg"); mask-image: url("../icons/fontawesome/plane-arrival.svg"); }
+.bi-location-arrow::before { -webkit-mask-image: url("../icons/fontawesome/location-arrow.svg"); mask-image: url("../icons/fontawesome/location-arrow.svg"); }
+
+
+/* No gold icons: use charcoal, coastal green and white throughout. */
+:root {
+    --sr-icon-ink: #243c36;
+    --sr-icon-soft: #556963;
+    --sr-icon-pale: #e7eeea;
+    --sr-icon-on-dark: #ffffff;
+}
+
+.silver-meta-item .bi,
+.welcome-location-card .bi,
+.welcome-managed-mark .bi,
+.stat-icon.summary-icon .bi,
+.lux-room-feature-list .bi,
+.lux-stay-inclusions .bi,
+.lux-rooms-note .bi,
+.lux-facility-meta .bi,
+.rates-panel .bi,
+.footer-col .bi {
+    color: var(--sr-icon-ink) !important;
+}
+
+/* Bare, editorial icon treatment rather than generic gold circles. */
+.stat-icon.summary-icon {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.stat-icon.summary-icon .bi { --icon-size: 1.55rem; }
+
+.welcome-location-card .bi {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-right: .75rem;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.welcome-managed-mark {
+    border: 0 !important;
+    background: transparent !important;
+}
+.welcome-managed-mark .bi { --icon-size: 1.2rem; }
+
+.lux-stay-inclusions .bi {
+    width: 1.35rem !important;
+    height: 1.35rem !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+.room-slider-nav .bi,
+.lux-circle-link .bi,
+.lux-facility-arrows .bi,
+.hero-btn .bi,
+.btn-book .bi,
+.rates-download-btn .bi,
+.rates-directions-btn .bi,
+.rates-call-btn .bi {
+    color: inherit !important;
+}
+
+.summary-award-icon .bi,
+.page-footer .footer-social .bi,
+.footer-mokawa-link .bi {
+    color: var(--sr-icon-on-dark) !important;
+}
+
+.rates-panel-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: .75rem;
+    background: var(--sr-icon-pale);
+    color: var(--sr-icon-ink);
+}
+.rates-panel-icon .bi { --icon-size: 1.25rem; color: inherit !important; }
+
+.footer-col p .bi { --icon-size: .92rem; margin-right: .45rem; color: #d6dfdb !important; }
+.footer-social .bi { --icon-size: 1rem; }

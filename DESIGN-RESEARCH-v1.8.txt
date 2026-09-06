@@ -1,0 +1,12 @@
+DESIGN DIRECTION — VERSION 1.8
+
+The redesign follows patterns commonly used by leading luxury hotel brands:
+- Image-first accommodation storytelling rather than small generic cards.
+- Restrained editorial typography, generous whitespace and a warm material palette.
+- Clear room facts such as size, occupancy, bed type, view and rate.
+- Accommodation category filtering for easier comparison.
+- Strong distinction between commercial room listings and experiential resort facilities.
+- Facilities presented as immersive destination stories with full-bleed photography.
+- Emphasis on local character, natural setting and indoor-outdoor living.
+
+The implementation uses only the images already supplied with the Silver Rock website package.

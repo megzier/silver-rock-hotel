@@ -1,0 +1,8 @@
+ICON SYSTEM — V1.17
+
+Bootstrap Icons 1.13.1
+Official website: https://icons.getbootstrap.com/
+License: MIT
+Implementation: locally bundled webfont/CSS so the website icons work offline.
+
+The previous externally loaded Font Awesome icon font was removed.
